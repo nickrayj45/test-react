@@ -5,33 +5,33 @@
   font-family: "PT Sans", sans-serif;
 }
 .home,
-.projects,
-.about,
-.contact {
+.services,
+.enviroment,
+.sign-up {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
 }
-.projects {
-  background-image: url("/videos/video-1");
+.services {
+  /* background-image: url("/videos/video-1"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
-.about {
-  background-image: url("/images/img-1.jpg");
+.enviroment {
+  /* background-image: url("/images/img-1.jpg"); */
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
 }
-.contact {
-  background-image: url("/images/img-8.jpg");
+.sign-up {
+  /* background-image: url("/images/img-8.jpg"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,4 +67,42 @@ video {
   font-size: 32px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+:root {
+  --primary: #fff;
+}
+.btn {
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--primary);
+  color: #242424;
+  border: 1px solid var(--primary);
+}
+.btn--outline {
+  background-color: transparent;
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+.btn--medium {
+  padding: 8px 20px;
+  font-size: 18px;
+}
+.btn--large {
+  padding: 12px 26px;
+  font-size: 20px;
+}
+.btn--large:hover,
+.btn--medium:hover {
+  transition: all 0.3s ease-out;
+  background: #fff;
+  color: #242424;
+  transition: 250ms;
 }
